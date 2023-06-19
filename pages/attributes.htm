@@ -37,6 +37,10 @@
                     <li>
                         <a href="./forms.htm"> HTML Forms </a>
                     </li>
+
+                    <li>
+                        <a href="./table.html"> HTML Tables </a>
+                    </li>
                 </ul>
             </nav>
         
@@ -48,7 +52,7 @@
                         <h3> attribute for making the content of an element editable. </h3>
                         
                         <div class="code"> 
-                            &lt;p contenteditable="true"&gt; Hi there. You can change me &lt;/p;&gt;
+                            &lt;p <mark>contenteditable="true"</mark>&gt; Hi there. You can change me &lt;/p;&gt;
                         </div>
 
                         <p contenteditable="true"> Hi there. You can change me </p>
@@ -58,12 +62,12 @@
                         <h3> boolean attribute to specify that an <span class="text-red"> &lt;input&gt; </span>  tag must automatically get focus when the page loads. </h3>
 
                         <div class="code"> 
-                            &lt;input placeholder="Enter a text" autofocus/&gt;
+                            &lt;input placeholder="Enter a text" <mark>autofocus</mark>&gt;
                         </div>
 
                         <div>
                             <br>
-                            <input placeholder="Enter a text" autofocus>
+                            <input placeholder="Enter a text" autofocus >
                         </div>      
                     </li>
                     
@@ -71,7 +75,7 @@
                         <h3> attribute to specify that the <span class="text-red"> &lt;button&gt; </span> is disabled. </h3>
 
                         <div class="code"> 
-                            &lt;button disabled&gt; Click Me &lt;/button;&gt;
+                            &lt;button <mark>disabled</mark>&gt; Click Me &lt;/button;&gt;
                         </div>
                         
                         <div>
@@ -84,7 +88,7 @@
                         <h3> add a "tooltip" to a link,  which must say "Go to homepage". </h3>
 
                         <div class="code"> 
-                            &lt;a href="../index.htm" title="Go to homepage"> Homepage &lt;/a&gt;
+                            &lt;a href="../index.htm" <mark>title="Go to homepage"</mark>> Homepage &lt;/a&gt;
                         </div>
                         
                         <div>
@@ -92,7 +96,63 @@
                             <a href="../index.htm" title="Go to homepage"> Homepage </a>
                         </div>
                     </li>
+
+                    <li>
+                        <h3> 
+                            attributes to make an image responsive. Visit 
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank" rel="noopener noreferrer">
+                                Responsive Images
+                            </a>
+                            <a href="tel:+0712359273">0712359273</a>
+                        </h3>
+
+                        <div class="code"> 
+                            &lt;img <br>
+                                &emsp; <mark>srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"</mark> <br>
+                                &emsp; <mark>sizes="(max-width: 600px) 480px, <br>
+                                &emsp;&emsp;&emsp;&emsp; 800px"</mark> <br>
+                                &emsp; src="elva-fairy-800w.jpg" <br>
+                                &emsp; alt="Elva dressed as a fairy" <br>
+                            />
+                        </div>
+                        
+                        <div>
+                            <br>
+                            <a 
+                                href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/responsive.html" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"
+                                    sizes="(max-width: 600px) 480px,
+                                            800px"
+                                    src="elva-fairy-800w.jpg"
+                                    alt="Elva dressed as a fairy" />
+                            </a>
+                        </div>
+                    </li>
                     
+                    <li>
+                        <h3> attributes values for different types of links </h3>
+
+                        <div class="code"> 
+                            &lt;a href="#"> Normal Link &lt;/a>
+                            <br>
+                            &lt;a href="<mark>mailto:example@gmail.com</mark>">Email Link&lt;/a>
+                            <br>
+                            &lt;a href="<mark>tel:+0712345678</mark>">Telephone Link&lt;/a>
+                        </div>
+                        
+                        <div>
+                            <br>
+                            <a href="#"> Normal Link </a>
+                            <br>
+                            <a href="mailto:example@gmail.com"> Email Link </a>
+                            <br>
+                            <a href="tel:+0712345678"> Telephone Link </a>
+                        </div>
+                    </li>
                 </ol>
 
                 <h6 class="text-center">
